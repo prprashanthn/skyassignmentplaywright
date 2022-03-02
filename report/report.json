@@ -1,0 +1,106 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "navigating-and-usage-of-sky-shop-page;to-verify-user-is-taken-to-'create-your-my-sky-password'-screen-tries-to-login-with-invalid-credentails",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "To verify user is taken to 'Create your My Sky password' screen tries to login with invalid credentails",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 411000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "Support\\home.steps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6865000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "User clicks on Sign in",
+            "match": {
+              "location": "Support\\home.steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 897000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "User enters invalid credentails \"prprwtw@gmail.com\"",
+            "match": {
+              "location": "Support\\signin.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9051000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "User clicks on Continue button",
+            "match": {
+              "location": "Support\\signin.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 608000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "User should displayed a box with text 'Create your My Sky password'",
+            "match": {
+              "location": "Support\\signin.steps.js:14"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 37000000,
+              "error_message": "ReferenceError: switchToDesiredFrame is not defined\n    at SignInPage.verifyCreatePasstext (C:\\Users\\bhavana\\Desktop\\Project\\playwright-main\\playwright-main\\PageObjects\\signin.page.js:23:9)\n    at World.<anonymous> (C:\\Users\\bhavana\\Desktop\\Project\\playwright-main\\playwright-main\\Support\\signin.steps.js:16:23)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 252000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "navigating-and-usage-of-sky-shop-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Navigating and Usage of Sky shop page",
+    "tags": [],
+    "uri": "Feature\\skyTest.feature"
+  }
+]
