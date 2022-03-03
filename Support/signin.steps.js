@@ -12,6 +12,5 @@ When('User clicks on Continue button', async()=>{
 });
 
 Then('User should displayed a box with text{}',async(expPasswordText)=>{
-    await signInPage.switchToDesiredFrame()
     await signInPage. verifyCreatePasstext(expPasswordText) 
 });
