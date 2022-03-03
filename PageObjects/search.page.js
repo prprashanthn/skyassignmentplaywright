@@ -18,6 +18,7 @@ class SearchPage{
 
     async editorialSection() {
         await page.screenshot({ path: 'screenshot.png', fullPage: true });
+        expect(await page.locator('//a[contains(text(),"Sky offers")]')).toContainText('Sky offers');
       }
 }
 module.exports = { SearchPage };
